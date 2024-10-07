@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Stage, Graphics, Sprite, useTick } from "@pixi/react";
 import * as PIXI from "pixi.js";
 import CursorIcon from "../assets/cursor2.webp";
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import { useAppStore } from "../store/store";
 
 const MousePathDisplay = () => {
@@ -137,9 +137,6 @@ const MousePathDisplay = () => {
         padding: "20px",
       }}
     >
-      <Button variant="contained" onClick={resetTimer}>
-        Reset Timer
-      </Button>
       <Stage
         width={width}
         height={height}
